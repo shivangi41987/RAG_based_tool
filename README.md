@@ -1,8 +1,8 @@
-# 📚 PDF RAG Assistant - Production Quality
+#  PDF RAG Assistant - Production Quality
 
 A fully local, production-quality Retrieval-Augmented Generation (RAG) system for PDF Q&A with citations. **No API keys required** - runs entirely on your CPU.
 
-## ✨ Features
+##  Features
 
 - **100% Local**: No OpenAI or external APIs - complete offline functionality
 - **PDF Upload**: Upload any PDF document through Streamlit interface
@@ -52,46 +52,46 @@ The app will open in your browser at `http://localhost:8501`
 3. **Ask Questions**: Type your question in the chat input
 4. **View Citations**: Expand "View Retrieved Context" to see source excerpts
 
-## 📋 Expected Test Cases
+##  Expected Test Cases
 
-### ✅ 1. Direct Fact Retrieval
+### 1. Direct Fact Retrieval
 **Q**: *What is the candidate's total experience?*  
 **Expected**: `The candidate has 2 years of experience. (Page 1)`
 
-### ✅ 2. Skill Lookup
+###  2. Skill Lookup
 **Q**: *What programming languages does the candidate know?*  
 **Expected**: `The candidate knows Python, SQL, and C++. (Page 1)`
 
-### ✅ 3. Work Experience Detail
+###  3. Work Experience Detail
 **Q**: *What was the candidate's role at ABC Company?*  
 **Expected**: `The candidate worked as a Data Scientist at ABC Company. (Page 2)`
 
-### ✅ 4. Responsibility Extraction
+###  4. Responsibility Extraction
 **Q**: *What were the key responsibilities in the last job?*  
 **Expected**: `The responsibilities included building ML models, data preprocessing, and dashboard development. (Page 2)`
 
-### ✅ 5. Project-Specific Question
+###  5. Project-Specific Question
 **Q**: *What technologies were used in the RAG project?*  
 **Expected**: `The project used FAISS, SentenceTransformers, and a local LLM. (Page 3)`
 
-### ✅ 6. Multi-Chunk Reasoning
+###  6. Multi-Chunk Reasoning
 **Q**: *Does the candidate have experience in both machine learning and data engineering?*  
 **Expected**: `Yes, the candidate has experience in machine learning and data engineering. (Pages 1 and 2)`
 
-### ✅ 7. Not Found Case (Critical)
+###  7. Not Found Case (Critical)
 **Q**: *What is the candidate's GPA?*  
 **Expected**: `Not found in document.`
 
-### ✅ 8. Follow-Up Question
+###  8. Follow-Up Question
 **First Q**: *What tools does she use?*  
 **Follow-up**: *Does she use PySpark?*  
 **Expected**: System understands "she" from conversation history
 
-### ✅ 9. Edge Case - Ambiguous Question
+###  9. Edge Case - Ambiguous Question
 **Q**: *When did she start?*  
 **Expected**: Answers based on most recent or clarifies if ambiguous
 
-### ✅ 10. Long Answer Question
+###  10. Long Answer Question
 **Q**: *Summarize the candidate's experience.*  
 **Expected**: Concise summary from context with citations
 
@@ -180,7 +180,7 @@ TOP_K = 4  # Retrieved chunks
 - `microsoft/phi-2` (2.7B, better quality, slower)
 - `google/flan-t5-large` (780M, instruction-tuned)
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Issue: Out of Memory
 **Solution**: Reduce CHUNK_SIZE or use smaller models
@@ -197,7 +197,7 @@ TOP_K = 4  # Retrieved chunks
 - Check if PDF text extracted correctly
 - Increase TOP_K for broader retrieval
 
-## 🔒 Privacy & Security
+##  Privacy & Security
 
 - **100% Local**: No data leaves your machine
 - **No API Keys**: No external service dependencies
@@ -215,7 +215,7 @@ TOP_K = 4  # Retrieved chunks
 - Disk Space: 5GB for models and data
 - CPU: Any modern multi-core processor
 
-## 🤝 Contributing
+## Contributing
 
 Suggestions for improvement:
 - Add support for multiple PDFs
@@ -223,11 +223,11 @@ Suggestions for improvement:
 - Add re-ranking for better retrieval
 - Support for tables and images
 
-## 📄 License
+## License
 
 Open source - feel free to modify and adapt for your needs.
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 Built with:
 - [Streamlit](https://streamlit.io/) - Web interface
