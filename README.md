@@ -15,7 +15,7 @@ A fully local, production-quality Retrieval-Augmented Generation (RAG) system fo
 - **Error Handling**: Robust handling of edge cases and empty results
 - **Production Ready**: Clean, modular code with comprehensive comments
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. Installation
 
@@ -95,7 +95,7 @@ The app will open in your browser at `http://localhost:8501`
 **Q**: *Summarize the candidate's experience.*  
 **Expected**: Concise summary from context with citations
 
-## 🏗️ Architecture
+##  Architecture
 
 ### Pipeline Flow
 
@@ -146,7 +146,7 @@ User Query → Query Embedding → Similarity Search → Top-K Chunks
    - Snippet display in expander
    - Automatic citation formatting
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 rag_assignment/
@@ -203,7 +203,7 @@ TOP_K = 4  # Retrieved chunks
 - **No API Keys**: No external service dependencies
 - **Offline Capable**: Works without internet after models are downloaded
 
-## 📊 Performance
+##  Performance
 
 **Typical Performance (CPU):**
 - PDF Processing: ~2-5 seconds per page
